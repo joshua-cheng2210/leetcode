@@ -18,6 +18,9 @@ class Solution(object):
     #             updating_index += 1
     #             counter += 1
     #     return counter
+    
+# note:
+# - i used to method i learnt from #27
 
     def removeDuplicates(self, nums):
         """
@@ -30,6 +33,7 @@ class Solution(object):
         nums[:counter] = nums2[:counter]
 
         return counter
+    
           
 
             
