@@ -70,7 +70,7 @@ class Solution(object):
         :rtype: int
         """
         # evaluation:
-        # - time complexity: O(n)
+        # - time complexity: depending on the complexity of the sort
         # - space complexity: O(1)
         # Sort the list in descending order
         citations.sort(reverse=True)
@@ -115,3 +115,23 @@ class Solution(object):
 # i=0, c=3: c >= i+1 → h=1
 # i=1, c=1: c < i+1 → Stop
 # Return h=1.
+
+# class Solution:
+#     # evaluation:
+#     # - time complexity: O(N)
+#     # - space complexity: O(M)
+#     def hIndex(self, citations):
+#         papers = len(citations)
+#         citation_buckets = [0] * (papers + 1)
+
+#         for citation in citations: # note: the solution uniquely created its own additional data structure to note its iteration
+#             citation_buckets[min(citation, papers)] += 1
+
+#         cumulative_papers = 0
+#         for h_index in range(papers, -1, -1):
+#             cumulative_papers += citation_buckets[h_index]
+#             if cumulative_papers >= h_index:
+#                 return h_index   
+            
+# note:
+# - to reduce a time complexity from O(n^2) to O(n), the common way is to create an additional array to make notes of your iterations and causing the space complexity to be O(M)
