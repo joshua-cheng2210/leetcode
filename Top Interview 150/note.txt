@@ -1,0 +1,19 @@
+Top Interview 150:
+Array List notes
+# - instead of looking for the next val to be replace, the algorithm looked out for the next non-val to replace the val
+# - try practising debugging using comments. meaning comment the value of the variable to keep track of the value and verify your algorithm
+# - use substring aproach
+# - keep multiple pointers or trackers
+# - this solution is like BFS, can you see it?
+# - be sure on the priority of the decision making. which factor is the most important. reaching the last index or if you reach step == 0? 
+# - you must get use to debugging your own before spamming the debugger
+# - challenge: is it posssible to not use any in-built functions?
+# - be careful with indexing
+# - identify what you definitely know
+#   - if you want to find the optimal value like the max profit in this case, your algorithm is definitely going to be O(n) since the you need to make comparison with every number in the list and also if the list is not sorted]
+#   - figure out if you actually need to remember the previou value that has already been iterated through
+#   - maybe its hard to visualise the problem with a list, try drawing a graph
+# - so this solution is adding many small changes rather than my solution that adds little big changes - how is adding small changes faster? is it because i have too many if statements and checkings?
+# - using reverse() is slower than using list[::-1]
+# - Boyer-Moore Voting Algorithm # if you're sure the item's occurance you're looking for is more that half of the search space, this is your alg
+# - to reduce a time complexity from O(n^2) to O(n), the common way is to create an additional array to make notes of your iterations and causing the space complexity to be O(M)
