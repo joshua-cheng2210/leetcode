@@ -21,3 +21,4 @@ Array List notes
 # - normal dict will not edit the value of a non-existant key in the dict; but for defaultdict(), it will automatically initialize the key and set the value
 # - it keeps the value as a key in the defaultdict() and add it to the array; and then it keeps the index of the item in the array as the value in the defaultdict() - this can make insert() and del() a time of O(1) but of course space of O(n)
 # - idea is use both a dictionary and an array to have O(1) in search, add and del. Using a dictionary to keep track of the index of the element in a normal array
+# - understand the pattern to get the answer for 1 element by 1) know what information you need 2) think how to get the information
