@@ -17,3 +17,7 @@ Array List notes
 # - using reverse() is slower than using list[::-1]
 # - Boyer-Moore Voting Algorithm # if you're sure the item's occurance you're looking for is more that half of the search space, this is your alg
 # - to reduce a time complexity from O(n^2) to O(n), the common way is to create an additional array to make notes of your iterations and causing the space complexity to be O(M)
+# - an advance version of the normal dictionary data structure - defaultdict()
+# - normal dict will not edit the value of a non-existant key in the dict; but for defaultdict(), it will automatically initialize the key and set the value
+# - it keeps the value as a key in the defaultdict() and add it to the array; and then it keeps the index of the item in the array as the value in the defaultdict() - this can make insert() and del() a time of O(1) but of course space of O(n)
+# - idea is use both a dictionary and an array to have O(1) in search, add and del. Using a dictionary to keep track of the index of the element in a normal array
