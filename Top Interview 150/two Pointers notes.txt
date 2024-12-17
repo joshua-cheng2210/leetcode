@@ -1,1 +1,4 @@
 # - you might want to look at some common string manipulation build-in functions
+# - i realized that when an algorithm has a time complexity of O(n^2) and space complexity of O(1), it can normally be reduced to have time of O(n) and space ofO(n)
+# - but if an algorithm have a time complexity of O(n^3) and space of O(1), it can be reduced to time of O(n^2) and space of O(n)
+# - so i feel like im learning that to decrease time complexity by n, the common way is to increase space complexity by n

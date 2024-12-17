@@ -28,3 +28,6 @@ Array List notes
 # 1) iterating multiple times front to back or back to front
 # 2) for each element in the list, try seeing if there are any patterns between the elements to the left and right of it
 # 3) try figuring out if it has anything got to do with the peaks or lows of the graph or 4) try local andgloabl minima and maxima
+# - i realized that when an algorithm has a time complexity of O(n^2) and space complexity of O(1), it can normally be reduced to have time of O(n) and space ofO(n)
+# - but if an algorithm have a time complexity of O(n^3) and space of O(1), it can be reduced to time of O(n^2) and space of O(n)
+# - so i feel like im learning that to decrease time complexity by n, the common way is to increase space complexity by n
