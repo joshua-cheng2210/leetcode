@@ -37,4 +37,4 @@ class Solution(object):
         return s.lower()==n.lower()
 
 # note:
-# - you might want to look at some common string manipulation build-in functions
+# - you might want to look at some common string manipulation build-in functions.
