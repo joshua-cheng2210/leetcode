@@ -14,4 +14,11 @@ class Solution(object):
 
         # iteration
         while front_index < back_index:
-            while front_index < back_index and :
+            water = min(height[front_index], height[back_index]) * (back_index - front_index)
+            max_water = max(water, max_water)
+            if height[front_index] < height[back_index]: # idk how to iterate the list
+                front_index += 1
+            else:
+                back_index -= 1
+            
+        return max_water
