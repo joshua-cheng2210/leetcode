@@ -122,6 +122,10 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        # evaluation:
+        # - time complexity: O(n)
+        # - space complexity: O(n) --> cause of myDict
+
         # idea1: have both front index and back index --> sliding window approach
         # initialization
         front_index = 0
@@ -143,3 +147,5 @@ class Solution(object):
 
         return out
 
+# learn:
+# - you need to realize when you need to use teh sliding window method
