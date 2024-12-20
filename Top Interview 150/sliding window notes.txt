@@ -1,0 +1,4 @@
+Top Interview 150:
+Sliding Window notes
+# - read the question properly. you falsely understood 209. maybe try to ask clarifying question next time? and try to amke statements about your understanding?
+# - sliding window problem is just iterating through the array with front and back index
